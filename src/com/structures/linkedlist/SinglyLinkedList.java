@@ -1,6 +1,6 @@
 package com.structures.linkedlist;
 
-public class SinglyLinkedLIst {
+public class SinglyLinkedList {
 
     public static void main() {
 
