@@ -23,7 +23,5 @@ public class SinglyLinkedList {
         singlyLinkedList.insert(4);
         singlyLinkedList.insert(8);
         singlyLinkedList.insert(9);
-
-        // test commit
     }
 }
