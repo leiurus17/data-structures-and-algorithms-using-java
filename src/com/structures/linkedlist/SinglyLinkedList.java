@@ -2,11 +2,7 @@ package com.structures.linkedlist;
 
 public class SinglyLinkedList {
 
-    Node start;
-
-    public static void main() {
-
-    }
+    private Node start;
 
     public void insert(int value) {
         Node current = start;
@@ -15,8 +11,17 @@ public class SinglyLinkedList {
             current = current.next;
         }
 
-        Node newNode = new Node(value);
+        current.next = new Node(value);
+    }
 
-        current.next = newNode;
+    public static void main(String[] args) {
+        SinglyLinkedList singlyLinkedList = new SinglyLinkedList();
+
+        singlyLinkedList.start = new Node(0);
+
+        singlyLinkedList.insert(1);
+        singlyLinkedList.insert(4);
+        singlyLinkedList.insert(8);
+        singlyLinkedList.insert(9);
     }
 }
