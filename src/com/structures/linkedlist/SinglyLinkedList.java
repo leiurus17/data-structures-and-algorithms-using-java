@@ -14,6 +14,17 @@ public class SinglyLinkedList {
         current.next = new Node(value);
     }
 
+    public void printValues() {
+
+        Node current = start;
+
+        while(current != null) {
+            System.out.println(current.value);
+
+            current = current.next;
+        }
+    }
+
     public static void main(String[] args) {
         SinglyLinkedList singlyLinkedList = new SinglyLinkedList();
 
@@ -23,5 +34,7 @@ public class SinglyLinkedList {
         singlyLinkedList.insert(4);
         singlyLinkedList.insert(8);
         singlyLinkedList.insert(9);
+
+        singlyLinkedList.printValues();
     }
 }
