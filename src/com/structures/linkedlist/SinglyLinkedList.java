@@ -4,8 +4,6 @@ import java.util.logging.Logger;
 
 public class SinglyLinkedList {
 
-    Logger logger = Logger.getLogger(SinglyLinkedList.class.getName());
-
     private Node start;
 
     public void insert(int value) {
@@ -24,7 +22,7 @@ public class SinglyLinkedList {
 
         while(current != null) {
 
-            logger.info((String.valueOf(current.value)));
+            System.out.println(current.value);
 
             current = current.next;
         }
