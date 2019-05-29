@@ -44,6 +44,23 @@ public class SinglyLinkedList {
         current.next = current.next.next;
     }
 
+    public void search(int value) {
+
+        Node current = start;
+
+        while (current != null) {
+
+            if (current.value == value) {
+                System.out.println(value + " is found!");
+                return;
+            }
+
+            current = current.next;
+        }
+
+        System.out.println(value + " is not found.");
+    }
+
     public static void main(String[] args) {
         SinglyLinkedList singlyLinkedList = new SinglyLinkedList();
 
@@ -59,5 +76,9 @@ public class SinglyLinkedList {
         singlyLinkedList.deleteNode(4);
 
         singlyLinkedList.printValues();
+
+        singlyLinkedList.search(10);
+
+        singlyLinkedList.search(9);
     }
 }
